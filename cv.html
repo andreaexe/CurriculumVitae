@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Stili per rendere responsive i contatti */
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item i {
+            margin-right: 10px;
+            min-width: 16px;
+            text-align: center;
+        }
+        
+        .contact-item span {
+            word-wrap: break-word;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            flex: 1;
+            max-width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-info {
+                width: 100%;
+            }
+            
+            .contact-item {
+                margin-bottom: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Colonna sinistra -->
+        <div class="left-column">
+            <div class="photo-container">
+                <div class="photo">
+                    <!-- Sostituisci con il percorso della tua foto -->
+                    <img src="fotoAttuale.png" alt="Foto profilo">
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Contatti</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+393890066880" style="text-decoration: none; color: inherit; word-wrap: break-word; word-break: break-word; overflow-wrap: break-word; flex: 1; max-width: 100%;">3890066880</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:andrea.sestini@gmail.com" style="text-decoration: none; color: inherit; word-wrap: break-word; word-break: break-word; overflow-wrap: break-word; flex: 1; max-width: 100%;">andrea.sestini@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Firenze, Italia</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-birthday-cake"></i>
+                        <span>12/02/2005</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/andrea-sestini-1a6b87320/" target="_blank" style="text-decoration: none; color: inherit; word-wrap: break-word; word-break: break-word; overflow-wrap: break-word; flex: 1; max-width: 100%;">linkedin.com/in/andrea-sestini-1a6b87320/</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/andreaexe" target="_blank" style="text-decoration: none; color: inherit; word-wrap: break-word; word-break: break-word; overflow-wrap: break-word; flex: 1; max-width: 100%;">github.com/andreaexe</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-id-card"></i>
+                        <span>Patente A1, B</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Profilo</h2>
+                <p>Neodiplomato in Informatica con solide competenze tecniche e grande passione per l'ethical hacking. Cerco opportunità per applicare le mie conoscenze in sicurezza informatica, contribuendo con entusiasmo a progetti innovativi nel settore cybersecurity.</p>
+            </div>
+
+            <div class="section">
+                <h2>Lingue</h2>
+                <div class="languages">
+                    <div class="language-item">
+                        <h3>Italiano: <span class="language-level-text">Madrelingua</span></h3>
+                    </div>
+                    <div class="language-item">
+                        <h3>Inglese: <span class="language-level-text">Intermedio (B1)</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Colonna destra -->
+        <div class="right-column">
+            <div class="header">
+                <h1>ANDREA SESTINI</h1>
+                <p class="profession">Cybersecurity Specialist</p>
+            </div>
+
+            <div class="section">
+                <h2>Istruzione e Formazione</h2>
+                <div class="education-item">
+                    <h3>2019 - 2024</h3>
+                    <h4>Diploma di Perito Informatico <span class="cert-issuer">- Istituto Tecnico Industriale Statale Itis Meucci</span></h4>
+                </div>
+                <div class="education-item">
+                    <h3>2025</h3>
+                    <h4>IFTS Cyber Security Specialist 3 <span class="cert-issuer">- IFTS PIN Prato</span></h4>
+                    <p>Responsabile della sicurezza di reti informatiche e della protezione dei dati</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Competenze</h2>
+                
+                <h3>Programmazione e Sviluppo</h3>
+                <ul class="skills-list">
+                    <li>Programmazione (Java, C, C++, PHP)</li>
+                    <li>Sviluppo Web (HTML, CSS, JavaScript, Bootstrap, PHP, SQL)</li>
+                    <li>Database (MySQL, SQL, Progettazione database)</li>
+                    <li>Sistemi Operativi (Windows, Linux)</li>
+                    <li>Git e GitHub</li>
+                    <li>Sviluppo API</li>
+                    <li>Sviluppo Applicazioni Client-Server</li>
+                    <li>Fondamenti dei linguaggi di programmazione</li>
+                </ul>
+
+                <h3>Cybersecurity</h3>
+                <ul class="skills-list">
+                    <li>Sicurezza Informatica</li>
+                    <li>Progettazione e Sicurezza Reti</li>
+                    <li>Crittografia e Scambio Dati Sicuro</li>
+                    <li>Security by Design</li>
+                    <li>Ethical Hacking</li>
+                    <li>Analisi Forense Informatica</li>
+                    <li>Progettazione ACL</li>
+                    <li>Blockchain</li>
+                    <li>AWS Cloud</li>
+                    <li>Information Security</li>
+                    <li>Analisi e gestione del rischio</li>
+                    <li>Metodi di analisi e strumenti di difesa</li>
+                    <li>Gestione incidenti informatici</li>
+                    <li>Sicurezza delle reti e delle applicazioni</li>
+                    <li>Normative sulla privacy e proprietà intellettuale</li>
+                </ul>
+
+                <h3>Soft Skills</h3>
+                <div class="soft-skills">
+                    <div class="soft-skill">Problem Solving</div>
+                    <div class="soft-skill">Competenze informatiche</div>
+                    <div class="soft-skill">Capacità comunicative</div>
+                    <div class="soft-skill">Orientamento al cliente</div>
+                    <div class="soft-skill">Pensiero analitico</div>
+                    <div class="soft-skill">Motivazione</div>
+                    <div class="soft-skill">Lavoro di squadra</div>
+                    <div class="soft-skill">Adattabilità</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Certificazioni</h2>
+                <div class="education-item">
+                    <h4>Operating Systems Basics <span class="cert-issuer">- Cisco Networking Academy</span></h4>
+                </div>
+                <div class="education-item">
+                    <h4>Introduction to Cybersecurity <span class="cert-issuer">- Cisco Networking Academy</span></h4>
+                </div>
+                <div class="education-item">
+                    <h4>Computer Hardware Basics <span class="cert-issuer">- Cisco Networking Academy</span></h4>
+                </div>
+                <div class="education-item">
+                    <h4>Ethical Hacker <span class="cert-issuer">- Cisco Networking Academy</span></h4>
+                </div>
+                <div class="education-item">
+                    <h4>"Cittadino Digitale" <span class="cert-issuer">- SOLVE FOR TOMORROW by Samsung</span></h4>
+                </div>
+                <div class="education-item">
+                    <h4>"SOLVE FOR TOMORROW CHAMPION" <span class="cert-issuer">- Samsung Electronics</span></h4>
+                </div>
+                <div class="education-item">
+                    <h4>NQAI - ACELS B1</h4>
+                    <p>Certificazione di lingua inglese</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Esperienze Formative</h2>
+                
+                <div class="experience-item">
+                    <div class="date-location">
+                        <span class="date">2023</span>
+                        <span class="location">Firenze, Italia</span>
+                    </div>
+                    <h3>Gilbarco Veeder-Root</h3>
+                    <h4>Stage PCTO</h4>
+                    <p>Ottimizzazione del codice per sistemi di distribuzione carburante e applicazione di conoscenze di programmazione in contesto industriale.</p>
+                </div>
+
+                <div class="experience-item">
+                    <div class="date-location">
+                        <span class="date">2022</span>
+                        <span class="location">Firenze, Italia</span>
+                    </div>
+                    <h3>Progetto PCTO "Latuaideadiimpresa"</h3>
+                    <p>Sviluppo business plan per startup tecnologica e progettazione di un'applicazione mobile in team.</p>
+                </div>
+
+                <div class="experience-item">
+                    <div class="date-location">
+                        <span class="date">2021</span>
+                        <span class="location">Dublino, Irlanda</span>
+                    </div>
+                    <h3>Dublino City Language School</h3>
+                    <h4>Viaggio di studio</h4>
+                    <p>Soggiorno linguistico con conseguimento certificazione NQAI - ACELS B1.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Hobby e Interessi</h2>
+                <div class="hobbies">
+                    <div class="hobby">
+                        <i class="fas fa-dumbbell"></i>
+                        <span>Palestra</span>
+                    </div>
+                    <div class="hobby">
+                        <i class="fas fa-futbol"></i>
+                        <span>Calcio (7 anni)</span>
+                    </div>
+                    <div class="hobby">
+                        <i class="fas fa-music"></i>
+                        <span>Pianoforte (2 anni)</span>
+                    </div>
+                    <div class="hobby">
+                        <i class="fas fa-users"></i>
+                        <span>Socializzare</span>
+                    </div>
+                    <div class="hobby">
+                        <i class="fas fa-code"></i>
+                        <span>Programmazione</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

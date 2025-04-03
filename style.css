@@ -1,0 +1,364 @@
+/* Reset e stili di base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    list-style-position: inside;
+    margin-bottom: 0.5rem;
+}
+
+/* Container principale */
+.cv-container {
+    display: flex;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+/* Colonna sinistra */
+.left-column {
+    width: 33%; /* Aumentato dal 30% */
+    background-color: #0A2647;
+    color: white;
+    padding: 2rem;
+}
+
+/* Sezione foto */
+.photo-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.photo {
+    width: 180px; /* Aumentato da 150px */
+    height: 180px; /* Aumentato da 150px */
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 4px solid white;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Sezioni generali */
+.section {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.right-column .section {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.left-column .section:last-child,
+.right-column .section:last-child {
+    border-bottom: none;
+}
+
+.left-column h2 {
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.left-column h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 2px;
+    background-color: white;
+}
+
+/* Contatti */
+.contact-info {
+    margin-top: 1rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.contact-item i {
+    width: 25px;
+    margin-right: 10px;
+}
+
+/* Istruzione */
+.education-item {
+    margin-bottom: 1rem;
+}
+
+.education-item h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.education-item h4 {
+    font-size: 1rem;
+}
+
+.education-item p {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+}
+
+/* Colonna destra */
+.right-column {
+    width: 67%; /* Ridotto dal 70% */
+    padding: 2rem;
+}
+
+/* Header */
+.header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #0A2647;
+    text-transform: uppercase;
+}
+
+.profession {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Sezione destra */
+.right-column h2 {
+    color: #0A2647;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.right-column h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #0A2647;
+}
+
+.right-column h3 {
+    font-size: 1.2rem;
+    color: #0A2647;
+}
+
+/* Esperienze */
+.experience-item {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.date-location {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.experience-item h3 {
+    margin-bottom: 0.2rem;
+}
+
+.experience-item h4 {
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.experience-item ul {
+    padding-left: 1rem;
+}
+
+.experience-item li {
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+}
+
+/* Skills */
+.skills {
+    margin-bottom: 1.5rem;
+}
+
+.skill-item {
+    margin-bottom: 0.8rem;
+}
+
+.skill-level {
+    height: 8px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.skill-bar {
+    height: 100%;
+    background-color: #0A2647;
+    border-radius: 4px;
+}
+
+/* Soft Skills */
+.soft-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.soft-skill {
+    background-color: #0A2647;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Lingue */
+.languages {
+    margin-bottom: 1.5rem;
+}
+
+.language-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+}
+
+.language-level {
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    margin-right: 5px;
+}
+
+.dot.filled {
+    background-color: #0A2647;
+}
+
+.language-level span:last-child {
+    margin-left: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Lingue - Aggiunte per il testo del livello */
+.language-level-text {
+    font-size: 0.85rem;
+    color: white; /* Cambiato da rgba(255, 255, 255, 0.7) a bianco pieno */
+    font-weight: normal;
+}
+
+/* Hobby e interessi */
+.hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hobby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+}
+
+.hobby i {
+    font-size: 1.8rem;
+    color: #0A2647;
+    margin-bottom: 0.5rem;
+}
+
+.hobby span {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Certificazioni */
+.cert-issuer {
+    font-weight: normal;
+    font-size: 0.85rem;
+    color: rgba(0, 0, 0, 0.6); /* Changed color to be dark for right column */
+}
+
+.left-column .cert-issuer {
+    color: rgba(255, 255, 255, 0.7); /* Keep light color for left column if needed */
+}
+
+/* Elenchi puntati per le competenze */
+.skills-list {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.skills-list li {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.right-column .skills-list li {
+    color: #333;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .cv-container {
+        flex-direction: column;
+    }
+    
+    .left-column, .right-column {
+        width: 100%;
+    }
+    
+    .left-column {
+        padding-bottom: 1rem;
+    }
+}
