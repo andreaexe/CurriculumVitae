@@ -1,7 +1,11 @@
-# Exclude personal profile photo
+# Ignora la foto del profilo
 fotoAttuale.png
 
-# Common files to ignore
+# Ignora altri file di immagini se necessario
+# *.jpg
+# *.jpeg
+
+# Altri file comuni da ignorare
 .DS_Store
 Thumbs.db
 desktop.ini
@@ -15,3 +19,7 @@ desktop.ini
 # Backup files
 *~
 *.bak
+
+# Se hai cartelle di build o dipendenze
+/node_modules
+/dist
