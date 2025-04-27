@@ -9,7 +9,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: #f5f5f5;
     color: #333;
-    line-height: 1.3; /* Further reduced from 1.4 */
+    line-height: 1.4; /* Increased from 1.3 for better spacing */
+    font-size: 0.9rem; /* Base font size for consistency */
 }
 
 h1, h2, h3, h4 {
@@ -18,7 +19,7 @@ h1, h2, h3, h4 {
 
 ul {
     list-style-position: inside;
-    margin-bottom: 0.3rem; /* Ridotto da 0.5rem */
+    margin-bottom: 0.4rem; /* Slightly increased */
 }
 
 /* Container principale - Ottimizzato per A4 */
@@ -64,8 +65,8 @@ ul {
 
 /* Sezioni generali */
 .section {
-    margin-bottom: 0.3rem; /* Ulteriormente ridotto */
-    padding-bottom: 0.15rem; /* Ulteriormente ridotto */
+    margin-bottom: 0.5rem; /* Increased from 0.3rem */
+    padding-bottom: 0.25rem; /* Increased from 0.15rem */
 }
 
 .right-column .section {
@@ -78,10 +79,10 @@ ul {
 }
 
 .left-column h2, .right-column h2 {
-    margin-bottom: 0.3rem;
-    font-size: 1.1rem; /* Ulteriormente ridotto */
-    padding-bottom: 0.25rem;
-    letter-spacing: 0.5px; /* Ridotto per compattare */
+    margin-bottom: 0.4rem; /* Increased */
+    font-size: 1.2rem; /* Standardized and slightly increased */
+    padding-bottom: 0.3rem; /* Increased */
+    letter-spacing: 0.5px;
 }
 
 .left-column h2::after {
@@ -96,11 +97,12 @@ ul {
 
 /* Contatti */
 .contact-info {
-    margin-top: 0.3rem; /* Ulteriormente ridotto */
+    margin-top: 0.4rem; /* Increased */
 }
 
 .contact-item {
-    margin-bottom: 0.2rem; /* Ulteriormente ridotto */
+    margin-bottom: 0.3rem; /* Increased */
+    font-size: 0.9rem; /* Standardized size */
 }
 
 .contact-item i {
@@ -110,20 +112,26 @@ ul {
 
 /* Istruzione */
 .education-item {
-    margin-bottom: 0.3rem; /* Ulteriormente ridotto */
+    margin-bottom: 0.4rem; /* Increased */
 }
 
 .education-item h3 {
-    font-size: 0.8rem; /* Ulteriormente ridotto */
+    font-size: 0.9rem; /* Increased for consistency */
 }
 
 .education-item h4 {
-    font-size: 0.85rem; /* Ulteriormente ridotto */
+    font-size: 0.9rem; /* Standardized size */
 }
 
 .education-item p {
-    font-size: 0.8rem;
-    margin-bottom: 0.05rem; /* Ulteriormente ridotto */
+    font-weight: normal;
+    font-size: 0.9rem; /* Standardized size */
+    margin-bottom: 0.1rem; /* Increased */
+}
+
+.cert-issuer {
+    font-weight: normal;
+    font-size: 0.9rem; /* Standardized size */
 }
 
 /* Colonna destra */
@@ -135,24 +143,24 @@ ul {
 /* Header */
 .header {
    margin-top: 0;
-   padding-bottom: 0.4rem; /* Ridotto */
+   padding-bottom: 0.5rem; /* Increased */
 }
 
 .header h1 {
-    font-size: 1.6rem; /* Ulteriormente ridotto */
-    line-height: 1.1;
+    font-size: 1.7rem; /* Slightly increased */
+    line-height: 1.2; /* Increased */
+    margin-bottom: 0.2rem;
 }
 
 .profession {
-    font-size: 0.9rem;
-    margin-bottom: 0.3rem; /* Ulteriormente ridotto */
+    font-size: 1.0rem; /* Increased */
+    margin-bottom: 0.4rem; /* Increased */
 }
 
 /* Sezione destra */
 .right-column h2 {
-    margin-bottom: 0.4rem; /* Ulteriormente ridotto */
-    padding-bottom: 0.3rem;
-    color: #0A2647;
+    margin-bottom: 0.5rem; /* Increased */
+    padding-bottom: 0.4rem; /* Increased */
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -170,32 +178,32 @@ ul {
 }
 
 .right-column h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem; /* Increased */
     color: #0A2647;
 }
 
 /* Esperienze */
 .experience-item {
-    margin-bottom: 0.7rem; /* Reduced from 1.5rem */
+    margin-bottom: 0.9rem; /* Increased */
     position: relative;
 }
 
 .date-location {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
+    margin-bottom: 0.6rem; /* Increased */
+    font-size: 0.9rem; /* Standardized size */
     color: #666;
 }
 
 .experience-item h3 {
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.3rem; /* Increased */
 }
 
 .experience-item h4 {
     color: #555;
     font-weight: 500;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.6rem; /* Increased */
 }
 
 .experience-item ul {
@@ -203,8 +211,8 @@ ul {
 }
 
 .experience-item li {
-    margin-bottom: 0.2rem; /* Reduced from 0.3rem */
-    font-size: 0.9rem; /* Reduced from 0.95rem */
+    margin-bottom: 0.3rem; /* Increased */
+    font-size: 0.9rem; /* Standardized size */
 }
 
 /* Skills */
@@ -213,48 +221,38 @@ ul {
 }
 
 .skills-list {
-    margin-bottom: 0.5rem; /* Ridotto drasticamente da 1.5rem */
-    padding-left: 0.6rem; /* Ulteriormente ridotto */
+    margin-bottom: 0.6rem; /* Increased */
+    padding-left: 0.7rem; /* Increased */
 }
 
 .skills-list li {
-    margin-bottom: 0.15rem; /* Ulteriormente ridotto */
-    font-size: 0.8rem; /* Ulteriormente ridotto */
+    margin-bottom: 0.25rem; /* Increased */
+    font-size: 0.9rem; /* Standardized size */
 }
 
-.skill-level {
-    height: 8px;
-    background-color: #e0e0e0;
-    border-radius: 4px;
-    margin-top: 5px;
-}
-
-.skill-bar {
-    height: 100%;
-    background-color: #0A2647;
-    border-radius: 4px;
-}
-
-/* Soft Skills */
+/* Attitudini - Convertito in elenco */
 .soft-skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px; /* Ulteriormente ridotto */
+    padding-left: 0.7rem;
+    list-style-type: disc;
+    margin-bottom: 0.5rem;
 }
 
-.soft-skill {
-    background-color: #0A2647;
+.soft-skills li {
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
     color: white;
-    padding: 3px 6px; /* Ulteriormente ridotto */
-    border-radius: 15px;
-    font-size: 0.75rem; /* Ulteriormente ridotto */
+}
+
+/* Rimuoviamo lo stile vecchio delle soft-skills che non useremo più */
+.soft-skill {
+    display: none;
 }
 
 /* Hobby e interessi */
 .hobbies {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px; /* Ulteriormente ridotto */
+    gap: 7px; /* Increased */
     justify-content: space-between; /* Distribuisce gli hobby orizzontalmente */
 }
 
@@ -262,9 +260,9 @@ ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 3px;
+    margin-bottom: 5px; /* Increased */
     background-color: #f9f9f9;
-    padding: 3px 8px;
+    padding: 4px 9px; /* Increased */
     border-radius: 15px;
     width: auto;
     flex: 0 0 calc(33% - 5px); /* Organizza in 3 colonne */
@@ -277,7 +275,7 @@ ul {
 }
 
 .hobby span {
-    font-size: 0.75rem;
+    font-size: 0.9rem; /* Standardized size */
 }
 
 /* Sezione privacy */
@@ -285,11 +283,21 @@ ul {
     width: 100%;
     max-width: 210mm; /* Larghezza A4 */
     margin: 0 auto;
-    padding: 5px;
+    padding: 7px; /* Increased */
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 0.8rem; /* Increased */
     color: #666;
     font-style: italic;
+}
+
+/* Languages */
+.language-level-text {
+    font-weight: normal;
+    font-size: 0.9rem; /* Standardized size */
+}
+
+.language-item h3 {
+    font-size: 0.9rem; /* Standardized size */
 }
 
 /* Print specific styles - Ottimizzati per A4 */
@@ -324,12 +332,12 @@ ul {
         height: 100px;
     }
     
-    .skills-list li, .soft-skill, .contact-item, .hobby span {
-        font-size: 0.75rem; /* Tutti i testi più piccoli per la stampa */
+    .skills-list li, .soft-skills li, .contact-item, .hobby span {
+        font-size: 0.9rem; /* Standardized size */
     }
     
     .privacy-disclaimer {
-        font-size: 0.65rem;
-        padding: 2px;
+        font-size: 0.8rem; /* Increased */
+        padding: 5px; /* Increased */
     }
 }
