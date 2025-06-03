@@ -1,5 +1,5 @@
-# Ignora la foto del profilo
-fotoAttuale.png
+# File di immagini personali (tenere sotto controllo)
+# Ora includiamo fotoAttuale.png nel repository
 
 # Ignora altri file di immagini se necessario
 # *.jpg
