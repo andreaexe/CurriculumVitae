@@ -143,18 +143,18 @@ ul {
 /* Header */
 .header {
    margin-top: 0;
-   padding-bottom: 0.5rem; /* Increased */
+   padding-bottom: 1rem; /* Increased to push content down */
 }
 
 .header h1 {
     font-size: 1.7rem; /* Slightly increased */
     line-height: 1.2; /* Increased */
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.3rem; /* Increased for more spacing */
 }
 
 .profession {
     font-size: 1.0rem; /* Increased */
-    margin-bottom: 0.4rem; /* Increased */
+    margin-bottom: 0.8rem; /* Increased to add more space before Profilo section */
 }
 
 /* Sezione destra */
