@@ -46,24 +46,31 @@
                 size: A4;
                 margin: 0;
             }
-            
+
             html, body {
                 width: 210mm;
                 height: 297mm;
                 margin: 0;
                 padding: 0;
                 overflow: hidden;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
             }
 
             .cv-container {
                 width: 210mm;
-                max-height: 287mm; /* Lascia spazio per il disclaimer */
+                max-height: 286mm;
                 overflow: hidden;
             }
-            
+
             .privacy-disclaimer {
                 position: relative;
                 bottom: 0;
+            }
+
+            .contact-item {
+                margin-bottom: 4px;
             }
         }
     </style>
@@ -78,43 +85,41 @@
                 </div>
             </div>
 
-            <div class="section">
+         <div class="section">
                 <h2>Competenze Tecniche</h2>
                 <ul class="skills-list">
-                    <li><strong>Programmazione:</strong> Java, C, C++, PHP, JavaScript</li>
-                    <li><strong>Sviluppo Web:</strong> HTML, CSS, JavaScript, Bootstrap, PHP, API, AI Integration</li>
-                    <li><strong>Database:</strong> MySQL, SQL, Progettazione database</li>
-                    <li><strong>Sistemi Operativi:</strong> Windows, Linux</li>
-                    <li><strong>Virtualizzazione:</strong> VMware vSphere</li>
-                    <li><strong>Networking & VoIP:</strong> Cisco CUCM, VoIP, Configurazione reti</li>
-                    <li><strong>Sicurezza Informatica:</strong> Trend Micro Vision One, DDI, Ethical Hacking, Crittografia, Security by Design, Firewall Fortinet</li>
-                    <li><strong>Monitoring & Infrastructure:</strong> Nagios, HPE Primera, HPE Synergy</li>
+                    <li><strong>Sicurezza Informatica:</strong> Trend Micro Vision One (XDR/EDR), DDI, Fortinet, Penetration Testing (Kali, Metasploit, Nmap), Vulnerability Assessment, Incident Response, Blue Team (SIEM, log analysis), Crittografia, Protocolli sicurezza, GDPR</li>
+                    <li><strong>VoIP & Networking:</strong> Cisco CUCM (dial plan, CSS, partition), troubleshooting VoIP ospedali</li>
+
+                    <li><strong>Monitoring:</strong> Nagios, VMware vSphere, Veeam Backup, HPE Primera/Synergy, sistemi Dell</li>
+<li><strong>Sviluppo:</strong> HTML, CSS, JavaScript, PHP, AI | MySQL | Java, C++</li>
                 </ul>
             </div>
 
-            <div class="section">
+
+       <div class="section">
                 <h2>Attitudini</h2>
                 <ul class="soft-skills">
-                    <li>Responsabilità e gestione dello stress</li>
-                    <li>Adattabilità e flessibilità</li>
-                    <li>Collaborazione e lavoro di squadra</li>
-                    <li>Capacità di problem solving</li>
-                    <li>Relazioni interpersonali e socievolezza</li>
+                    <li>Gestione operativa di sistemi critici sotto pressione </li>
+                    <li>Approccio metodico al troubleshooting e analisi dei problemi</li>
+                    <li>Apprendimento autonomo e curiosità tecnica continua </li>
+                    <li>Capacità di collaborazione e comunicazione tecnica con team e clienti</li>
                 </ul>
             </div>
+
+
+
 
             <div class="section">
                 <h2>Lingue</h2>
                 <div class="languages">
                     <div class="language-item">
-                        <h3>Italiano: <span class="language-level-text">Madrelingua</span></h3>
-                    </div>
-                    <div class="language-item">
-                        <h3>Inglese: <span class="language-level-text">Intermedio (B2)</span></h3>
+                        <h3>Italiano: <span class="language-level-text">Madrelingua</span> | Inglese: <span class="language-level-text">B2</span></h3>
                     </div>
                 </div>
             </div>
-        </div>
+
+</div>
 
         <!-- Colonna destra -->
         <div class="right-column">
@@ -123,8 +128,12 @@
                 <p class="profession">Cybersecurity Specialist</p>
                 <div class="section">
                     <h2>Profilo</h2>
-                    <p>Ho 20 anni e ho conseguito il diploma in Informatica e Telecomunicazioni presso l’ITIS Meucci. Ho recentemente completato il corso Cyber Security Specialist 3, che mi ha fornito competenze avanzate nella sicurezza delle reti e nella protezione dei dati. Da sei mesi lavoro presso Wetechs, dove ho approfondito la gestione di sistemi e reti, con particolare focus sulle tecnologie VoIP.
-Sono una persona motivata, curiosa e orientata alla crescita professionale, con una forte predisposizione al problem solving e all’apprendimento continuo nel settore IT e della cybersecurity.</p>
+                    <p>Ho 20 anni, diploma ITIS Meucci in Informatica e Telecomunicazioni. 
+Ho completato il corso IFTS Cyber Security Specialist 3 e lavoro da 8 mesi 
+come Systems Administrator in WeTech's con focus su VoIP, monitoraggio 
+infrastrutture critiche e sicurezza. Motivato, orientato al problem solving 
+e alla crescita continua in ambito cybersecurity.
+</p>
                 </div>
             </div>
 
@@ -144,53 +153,29 @@ Sono una persona motivata, curiosa e orientata alla crescita professionale, con 
             <div class="section">
                 <h2>Esperienza Lavorativa</h2>
                 <div class="education-item">
-                    <h3>Giugno 2024 - Presente</h3>
+                    <h3>Giugno 2025 - Febbraio 2026 </h3>
                     <h4>Systems Administrator <span class="cert-issuer">- WeTech's</span></h4>
                     <ul style="margin-top: 0.3rem; padding-left: 1.2rem;">
-                        <li>Configurazione di sonde di sicurezza (DDI), monitoraggio del traffico di rete e gestione delle policy su Trend Micro Vision One</li>
-                        <li>Sviluppo di applicazioni web full stack, incluso un sistema di trascrizione automatica delle chiamate con intelligenza artificiale</li>
-                        <li>Implementazione server Nagios per il monitoraggio dei dispositivi critici aziendali</li>
-                        <li>Supporto nella migrazione di firewall Fortinet e nella transizione da sistemi telefonici analogici a VoIP Cisco con configurazione CUCM</li>
-                        <li>Gestione e aggiornamento degli inventari IT aziendali, migliorando la tracciabilità delle risorse</li>
-                        <li>Approfondimento di VMware vSphere e soluzioni HPE (Primera, Synergy)</li>
+                        <li>Supporto nella configurazione sonde DDI e Trend Micro Vision One: mappatura reti, raccolta requisiti, firmware update e hardening DNS</li>
+                        <li>Configurazione alert firewall Fortinet per infrastrutture ospedaliere con notifiche automatiche; supporto a migrazioni</li>
+                        <li>Gestione infrastruttura VoIP Cisco CUCM ospedali Toscana: configurazione IP phone, troubleshooting dial plan/CSS/partition, risoluzione ticket fonia</li>
+                        <li>Monitoraggio operativo sistemi critici (112, 116, 117, 118, PACS), VMware vSphere (gestione VM, snapshot, riavvio macchine) e backup Veeam: analisi alert, troubleshooting, escalation e reporting</li>
+                        <li>Sviluppo applicazione speech-to-text con AI per trascrizione chiamate emergenza (non deployato per compliance GDPR)</li>
+
                     </ul>
                 </div>
-                <div class="education-item">
-                    <h3>2022 (1 mese)</h3>
-                    <h4>Stage - Web Developer <span class="cert-issuer">- Stage con Itis Meucci</span></h4>
-                    <ul style="margin-top: 0.3rem; padding-left: 1.2rem;">
-                        <li>Sviluppo di una nuova versione responsive di un software di gestione dei rifornimenti utilizzando HTML, CSS e JavaScript</li>
-                        <li>Riconfigurazione dell'interfaccia da layout fisso a modulare, garantendo compatibilità con schermi di diverse dimensioni</li>
-                        <li>Redazione di una relazione tecnica comparativa tra la versione originale e quella aggiornata, evidenziando i miglioramenti in termini di flessibilità e usabilità</li>
-                    </ul>
-                </div>
+
+
+               <div class="education-item">
+    <h3>2022 </h3>
+    <h4>Stage - Web Developer <span class="cert-issuer">- Gilbarco Veeder-Root (Stage ITIS Meucci)</span></h4>
+    <ul style="margin-top: 0.3rem; padding-left: 1.2rem;">
+        <li>Sviluppo versione responsive di software gestionale rifornimenti (HTML, CSS, JavaScript): riconfigurazione interfaccia da layout fisso a modulare e redazione relazione tecnica comparativa.</li>
+    </ul>
+</div>
+
             </div>
 
-            <div class="section">
-                <h2>Hobby e Interessi</h2>
-                <div class="hobbies">
-                    <div class="hobby">
-                        <i class="fas fa-dumbbell"></i>
-                        <span>Palestra</span>
-                    </div>
-                    <div class="hobby">
-                        <i class="fas fa-futbol"></i>
-                        <span>Calcio</span>
-                    </div>
-                    <div class="hobby">
-                        <i class="fas fa-music"></i>
-                        <span>Pianoforte</span>
-                    </div>
-                    <div class="hobby">
-                        <i class="fas fa-users"></i>
-                        <span>Social</span>
-                    </div>
-                    <div class="hobby">
-                        <i class="fas fa-code"></i>
-                        <span>Coding & Hacking</span>
-                    </div>
-                </div>
-            </div>
 
             <div class="section">
                 <h2>Contatti</h2>
@@ -207,10 +192,7 @@ Sono una persona motivata, curiosa e orientata alla crescita professionale, con 
                         <i class="fas fa-map-marker-alt"></i>
                         <span>Firenze, Italia</span>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-birthday-cake"></i>
-                        <span>12/02/2005</span>
-                    </div>
+
                     <div class="contact-item">
                         <i class="fab fa-linkedin"></i>
                         <a href="https://www.linkedin.com/in/andrea-sestini-1a6b87320/" target="_blank" style="text-decoration: none; color: inherit; word-wrap: break-word; word-break: break-word; overflow-wrap: break-word; flex: 1; max-width: 100%;">linkedin.com/in/andrea-sestini-1a6b87320/</a>

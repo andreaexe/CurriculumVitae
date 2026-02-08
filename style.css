@@ -303,41 +303,174 @@ ul {
 /* Print specific styles - Ottimizzati per A4 */
 @media print {
     @page {
-        size: A4; /* Imposta esplicitamente la dimensione A4 */
-        margin: 0; /* Rimuove i margini di default del browser */
+        size: A4;
+        margin: 0;
     }
-    
+
     html, body {
         width: 210mm;
         height: 297mm;
         margin: 0;
         padding: 0;
+        overflow: hidden;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
     }
-    
+
+    body {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
     .cv-container {
         width: 210mm;
-        padding: 5mm;
+        max-height: 400mm;
+        padding: 0;
         min-height: 0;
         box-shadow: none;
         margin: 0;
         page-break-inside: avoid;
+        overflow: hidden;
     }
-    
-    .left-column, .right-column {
-        padding: 0.6rem; /* Ulteriormente ridotto per stampa */
+
+    /* Forza colori colonna sinistra */
+    .left-column {
+        background-color: #0A2647 !important;
+        color: white !important;
+        padding: 1rem 0.8rem;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
     }
-    
+
+    .left-column h2,
+    .left-column h3,
+    .left-column li,
+    .left-column span,
+    .left-column strong,
+    .left-column .language-level-text,
+    .left-column .language-item h3 {
+        color: white !important;
+    }
+
+    .soft-skills li {
+        color: white !important;
+    }
+
+    .left-column h2::after {
+        background-color: white !important;
+    }
+
+    .right-column {
+        padding: 1rem 1rem;
+    }
+
+    .photo-container {
+        margin-bottom: 0.6rem;
+    }
+
     .photo {
-        width: 100px; /* Ulteriormente ridotto per stampa */
-        height: 100px;
+        width: 105px;
+        height: 105px;
     }
-    
-    .skills-list li, .soft-skills li, .contact-item, .hobby span {
-        font-size: 0.9rem; /* Standardized size */
+
+    /* Spaziature sezioni */
+    .section {
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.25rem;
     }
-    
+
+    .left-column h2 {
+        font-size: 1.15rem;
+        margin-bottom: 0.4rem;
+        padding-bottom: 0.3rem;
+    }
+
+    .right-column h2 {
+        font-size: 1.45rem;
+        margin-bottom: 0.45rem;
+        padding-bottom: 0.35rem;
+    }
+
+    .header {
+        padding-bottom: 0.5rem;
+    }
+
+    .header h1 {
+        font-size: 1.65rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .profession {
+        font-size: 1rem;
+        margin-bottom: 0.35rem;
+    }
+
+    .right-column h3 {
+        font-size: 1.05rem;
+    }
+
+    .education-item {
+        margin-bottom: 0.4rem;
+    }
+
+    .education-item h3 {
+        font-size: 0.9rem;
+    }
+
+    .education-item h4 {
+        font-size: 0.9rem;
+    }
+
+    .education-item p {
+        font-size: 0.9rem;
+    }
+
+    .cert-issuer {
+        font-size: 0.9rem;
+    }
+
+    .skills-list li {
+        font-size: 0.88rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .soft-skills li {
+        font-size: 0.88rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .contact-item {
+        font-size: 0.88rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .language-item h3 {
+        font-size: 0.88rem;
+    }
+
+    ul {
+        margin-bottom: 0.3rem;
+    }
+
+    .skills-list {
+        margin-bottom: 0.5rem;
+        padding-left: 0.7rem;
+    }
+
+    .soft-skills {
+        padding-left: 0.7rem;
+        margin-bottom: 0.4rem;
+    }
+
     .privacy-disclaimer {
-        font-size: 0.8rem; /* Increased */
-        padding: 5px; /* Increased */
+        font-size: 0.78rem;
+        padding: 5px 5px;
+        margin: 0;
+    }
+
+    .contact-info {
+        margin-top: 0.35rem;
     }
 }
